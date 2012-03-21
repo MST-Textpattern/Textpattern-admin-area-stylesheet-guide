@@ -51,6 +51,6 @@ TBC
 
 *CURRENTLY INCOMPLETE*
 
-h2. UI usage examples
+h2. Other UI usage examples
 
 *CURRENTLY INCOMPLETE*
