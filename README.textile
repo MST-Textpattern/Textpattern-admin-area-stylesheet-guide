@@ -1,0 +1,43 @@
+h1. Textpattern CMS admin area stylesheet guide (v4.5)
+
+The purpose of this guide is to document the current UI elements used within the admin-side of "Textpattern CMS":http://textpattern.com in order to streamline development, avoid conflicts and inconsistencies, and as a reference for admin them authors and plugin authors.
+
+h2. Global ID selectors
+
+h3. #messagepane
+
+TBC
+
+h3. #edit
+
+TBC
+
+h3. #list
+
+TBC
+
+*CURRENTLY INCOMPLETE*
+
+h2. Global class selectors
+
+h3. .txp-container
+
+TBC
+
+h3. .edit-pane
+
+TBC
+
+h3. .txp-control-panel
+
+TBC
+
+h3. .txp-navigation
+
+TBC
+
+*CURRENTLY INCOMPLETE*
+
+h2. UI usage examples
+
+*CURRENTLY INCOMPLETE*
