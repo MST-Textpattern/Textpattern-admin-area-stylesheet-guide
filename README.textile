@@ -1,6 +1,6 @@
 h1. Textpattern CMS admin area stylesheet guide (v4.5)
 
-The purpose of this guide is to document the current UI elements used within the admin-side of "Textpattern CMS":http://textpattern.com in order to streamline development, avoid conflicts and inconsistencies, and as a reference for admin theme authors and plugin authors.
+The purpose of this guide is to audit and document the current UI elements used within the admin-side of "Textpattern CMS":http://textpattern.com in order to streamline development, avoid conflicts and inconsistencies, and as a reference for admin theme authors and plugin authors.
 
 h2. Global ID selectors
 
@@ -27,7 +27,7 @@ Needs auditing and further clarification - seems to be used inconsistently throu
 
 h3. #list
 
-Needs auditing and further clarification - seems to be used inconsistently throughout the admin pages. Could easily be replaced by proper use and targeting of the @.list@ class or @.txp-list@ class instead (see below).
+Needs auditing and further clarification - seems to be used inconsistently throughout the admin pages. Could easily be replaced by proper use and targeting of the @.list@ class instead (see below).
 
 *CURRENTLY INCOMPLETE*
 
@@ -40,6 +40,14 @@ TBC
 h3. .edit-pane
 
 TBC
+
+h3. .list
+
+TBC
+
+h3. .txp-list
+
+Unnecessary class, functionality can be incorporated into @.list@ tag above instead. Recommend removal.
 
 h3. .txp-control-panel
 
