@@ -6,7 +6,20 @@ h2. Global ID selectors
 
 h3. #messagepane
 
-TBC
+h4. Usage
+
+Displaying alert messages above @div.txp-container@. The child @span@ can have a @class="error"@ or @class="warning"@ or @class="success"@ depending on the contect of the message.
+
+h4. Code structure example
+
+bc. <div id="messagepane">
+  <span id='message' class='success'>File <strong>test-file.zip</strong> updated.</span>
+</div>
+
+h4. Notes
+
+# @id="message"@ on the child @span@ does not seem to be used for styling purposes. Need clarification of its use.
+# This method is not currently consistent - it is not implemented on the login pages (login, logout, password request).
 
 h3. #edit
 
