@@ -23,11 +23,11 @@ h4. Notes:
 
 h3. #edit
 
-TBC
+Needs auditing and further clarification - seems to be used inconsistently throughout the admin pages. Could easily be replaced by proper use and targeting of the @.edit-pane@ class instead (see below).
 
 h3. #list
 
-TBC
+Needs auditing and further clarification - seems to be used inconsistently throughout the admin pages. Could easily be replaced by proper use and targeting of the @.list@ class or @.txp-list@ class instead (see below).
 
 *CURRENTLY INCOMPLETE*
 
