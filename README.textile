@@ -145,8 +145,8 @@ bc. <table class="list">
 
 h4. Notes:
 
-# The attributes @cellpadding@, @cellspacing@, @border@ and @width@ are unnecessary and can (and should) be styled with CSS instead.
-# A @scope@ attrbite should be applied to cells where appropriate (accessibility).
+# The attributes @cellpadding@, @cellspacing@, @border@, @align@ and @width@ are unnecessary and can (and should) be styled with CSS instead.
+# A @scope@ attribute should be applied to cells where appropriate (accessibility).
 # Removal of @id="list"@, as it duplicates functionality of @class="list"@.
 
 *CURRENTLY INCOMPLETE*
