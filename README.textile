@@ -10,7 +10,7 @@ h4. Usage:
 
 Displaying alert messages above @div.txp-container@. The child @span@ can have a @class="error"@ or @class="warning"@ or @class="success"@ depending on the context of the message.
 
-h4. Code structure example:
+h4. Current code structure example:
 
 bc. <div id="messagepane">
   <span id='message' class='success'>File <strong>test-file.zip</strong> updated.</span>
@@ -28,6 +28,12 @@ Needs auditing and further clarification - seems to be used inconsistently throu
 h3. #list
 
 Needs auditing and further clarification - seems to be used inconsistently throughout the admin pages. Could easily be replaced by proper use and targeting of the @.list@ class instead (see below).
+
+h3. #content_switcher
+
+h4. Usage:
+
+Used on a page with a list of switchable content, for example the list of available page templates within 'pages' page.
 
 *CURRENTLY INCOMPLETE*
 
@@ -60,5 +66,87 @@ TBC
 *CURRENTLY INCOMPLETE*
 
 h2. Other UI usage examples
+
+h3. Tables
+
+h4. Usage:
+
+Tabular data lists.
+
+h4. Current code structure example:
+
+bc. <table cellpadding="0" cellspacing="0" border="0" id="list" align="center" class="list" width="90%">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      ...
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      ...
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr class="odd">
+      <td></td>
+      <td></td>
+      <td></td>
+      ...
+    </tr>
+    <tr class="even">
+      <td></td>
+      <td></td>
+      <td></td>
+      ...
+    </tr>
+  </tbody>
+</table>
+
+h4. Recommended future code structure:
+
+bc. <table class="list">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+      ...
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      ...
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr class="odd">
+      <th scope="row"></th>
+      <td></td>
+      <td></td>
+      ...
+    </tr>
+    <tr class="even">
+      <th scope="row"></th>
+      <td></td>
+      <td></td>
+      ...
+    </tr>
+  </tbody>
+</table>
+
+h4. Notes:
+
+# The attributes @cellpadding@, @cellspacing@, @border@ and @width@ are unnecessary and can (and should) be styled with CSS instead.
+# A @scope@ attrbite should be applied to cells where appropriate (accessibility).
+# Removal of @id="list"@, as it duplicates functionality of @class="list"@.
 
 *CURRENTLY INCOMPLETE*
