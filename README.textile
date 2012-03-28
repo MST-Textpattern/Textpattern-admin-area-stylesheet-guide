@@ -235,15 +235,19 @@ h4. Notes:
 # @id="message"@ on the child @span@ does not seem to be used for styling purposes. Need clarification of its use.
 # This method is not currently consistent - it is not implemented on the login pages (login, logout, password request).
 
-bc. #edit
+h3. #edit
+
+h4. Usage:
 
 Needs auditing and further clarification - seems to be used inconsistently throughout the admin pages. Could easily be replaced by proper use and targeting of the @.edit-pane@ class instead (see below).
 
-bc. #list
+h3. #list
+
+h4. Usage:
 
 Needs auditing and further clarification - seems to be used inconsistently throughout the admin pages. Could easily be replaced by proper use and targeting of the @.list@ class instead (see below).
 
-bc. #content_switcher
+h3. #content_switcher
 
 h4. Usage:
 
@@ -253,27 +257,39 @@ Used on a page with a list of switchable content, for example the list of availa
 
 h2. Class selectors: global
 
-bc. .txp-container
+h3. .txp-container
+
+h4. Usage:
 
 TBC
 
-bc. .edit-pane
+h3. .edit-pane
+
+h4. Usage:
 
 TBC
 
-bc. .list
+h3. .list
+
+h4. Usage:
 
 TBC
 
-bc. .txp-list
+h3. .txp-list
+
+h4. Usage:
 
 Unnecessary class, functionality can be incorporated into @.list@ tag above instead. Recommend removal.
 
-bc. .txp-control-panel
+h3. .txp-control-panel
+
+h4. Usage:
 
 TBC
 
-bc. .txp-navigation
+h3. .txp-navigation
+
+h4. Usage:
 
 TBC
 
