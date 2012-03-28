@@ -40,8 +40,6 @@ h4. Notes:
 
 # Should probably use the @page-login@ id selector instead for simplicity and consistency (since both login and reset password pages share that id).
 
-h4. Current code structure example:
-
 h3. #page-category
 
 h4. Usage:
