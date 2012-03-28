@@ -6,97 +6,221 @@ h2. Id selectors: page-specific
 
 Each page within the admin-side should have an id attribute applied to the @<body>@ tag, prefixed with 'page-'. This prefix *should not* be used anywhere else on the page apart from the @<body>@ tag.
 
-Additional admin-side pages created by plugin authors should respect the following naming convention for the @<body>@ tag id attribute:
+h3. #page-authorprefix_pluginname
 
-bc. #page-authorprefix_pluginname
+h4. Usage:
 
-Below are the reserved id tags used by the core admin-side pages of Textpattern, these *should not* be duplicated in any other admin-side page.
+Additional admin-side pages created by plugin authors should adhere to the above naming convention for the @<body>@ tag id attribute. 'authorprefix_pluginname' should be replaced with the plugin author prefix and plugin name respectively.
 
-bc. #page-login
+h4. Current code structure example:
 
-Used on @<body>@ tag of the login page.
+bc. <body id="page-rah_external_output" class="extensions">
 
-bc. #page-reset_password
+h3. #page-login
 
-Used on @<body>@ tag of the login > reset password page.
+h4. Usage:
 
-bc. #page-article
+Used on @<body>@ tag of the login page and also the reset password page.
 
-Used on @<body>@ tag of the content > write page.
+h4. Current code structure example:
 
-bc. #page-list
+bc. <body id="page-login" class="content">
 
-Used on @<body>@ tag of the content > article list page.
+h3. #page-logout
 
-bc. #page-category
+h4. Usage:
 
-Used on @<body>@ tag of the content > category page.
+Used on @<body>@ tag of the logout page.
 
-bc. #page-image
+h4. Current code structure example:
 
-Used on @<body>@ tag of the content > images page.
+bc. <body id="page-logout" class="content">
 
-bc. #page-file
+h4. Notes:
 
-Used on @<body>@ tag of the content > files page.
+# Should probably use the @page-login@ id selector instead for simplicity and consistency (since both login and reset password pages share that id).
 
-bc. #page-link
+h4. Current code structure example:
 
-Used on @<body>@ tag of the content > links page.
+h3. #page-category
 
-bc. #page-discuss
+h4. Usage:
 
-Used on @<body>@ tag of the content > comments page.
+Used on @<body>@ tag of the content -> category page.
 
-bc. #page-section
+h4. Current code structure example:
 
-Used on @<body>@ tag of the presentation > sections page.
+bc. <body id="page-category" class="content">
 
-bc. #page-page
+h3. #page-article
 
-Used on @<body>@ tag of the presentation > page templates page.
+h4. Usage:
 
-bc. #page-form
+Used on @<body>@ tag of the content -> write page.
 
-Used on @<body>@ tag of the presentation > form templates page.
+h4. Current code structure example:
 
-bc. #page-css
+bc. <body id="page-article" class="content">
 
-Used on @<body>@ tag of the presentation > CSS styles page.
+h3. #page-list
 
-bc. #page-diag
+h4. Usage:
 
-Used on @<body>@ tag of the admin > diagnostics page.
+Used on @<body>@ tag of the content -> article list page.
 
-bc. #page-prefs
+h4. Current code structure example:
 
-Used on @<body>@ tag of the admin > preferences page.
+bc. <body id="page-list" class="content">
 
-bc. #page-lang
+h3. #page-image
 
-Used on @<body>@ tag of the admin > languages page.
+h4. Usage:
 
-bc. #page-admin
+Used on @<body>@ tag of the content -> images page.
 
-Used on @<body>@ tag of the admin > users page.
+h4. Current code structure example:
 
-bc. #page-log
+bc. <body id="page-image" class="content">
 
-Used on @<body>@ tag of the admin > visitor logs page.
+h3. #page-file
 
-bc. #page-plugin
+h4. Usage:
 
-Used on @<body>@ tag of the admin > plugins page.
+Used on @<body>@ tag of the content -> files page.
 
-bc. #page-import
+h4. Current code structure example:
 
-Used on @<body>@ tag of the admin > import page.
+bc. <body id="page-file" class="content">
+
+h3. #page-link
+
+h4. Usage:
+
+Used on @<body>@ tag of the content -> links page.
+
+h4. Current code structure example:
+
+bc. <body id="page-link" class="content">
+
+h3. #page-discuss
+
+h4. Usage:
+
+Used on @<body>@ tag of the content -> comments page.
+
+h4. Current code structure example:
+
+bc. <body id="page-discuss" class="content">
+
+h3. #page-section
+
+h4. Usage:
+
+Used on @<body>@ tag of the presentation -> sections page.
+
+h4. Current code structure example:
+
+bc. <body id="page-section" class="presentation">
+
+h3. #page-page
+
+h4. Usage:
+
+Used on @<body>@ tag of the presentation -> page templates page.
+
+h4. Current code structure example:
+
+bc. <body id="page-page" class="presentation">
+
+h3. #page-form
+
+h4. Usage:
+
+Used on @<body>@ tag of the presentation -> form templates page.
+
+h4. Current code structure example:
+
+bc. <body id="page-form" class="presentation">
+
+h3. #page-css
+
+h4. Usage:
+
+Used on @<body>@ tag of the presentation -> CSS styles page.
+
+h4. Current code structure example:
+
+bc. <body id="page-css" class="presentation">
+
+h3. #page-diag
+
+h4. Usage:
+
+Used on @<body>@ tag of the admin -> diagnostics page.
+
+h4. Current code structure example:
+
+bc. <body id="page-diag" class="admin">
+
+h3. #page-prefs
+
+h4. Usage:
+
+Used on @<body>@ tag of the admin -> preferences pages (basic, advanced and languages).
+
+h4. Current code structure example:
+
+bc. <body id="page-prefs" class="admin">
+
+h4. Notes:
+
+# Recommend that preferences (basic and advanced) are consolidated into a single page, languages are moved to seperate page with direct link in navigation menu.
+
+h3. #page-admin
+
+h4. Usage:
+
+Used on @<body>@ tag of the admin -> users page.
+
+h4. Current code structure example:
+
+bc. <body id="page-admin" class="admin">
+
+h3. #page-log
+
+h4. Usage:
+
+Used on @<body>@ tag of the admin -> visitor logs page.
+
+h4. Current code structure example:
+
+bc. <body id="page-log" class="admin">
+
+h3. #page-plugin
+
+h4. Usage:
+
+Used on @<body>@ tag of the admin -> plugins page.
+
+h4. Current code structure example:
+
+bc. <body id="page-plugin" class="admin">
+
+h3. #page-import
+
+h4. Usage:
+
+Used on @<body>@ tag of the admin -> import page.
+
+h4. Current code structure example:
+
+bc. <body id="page-import" class="admin">
 
 *CURRENTLY INCOMPLETE - MORE TEXT TO BE ADDED SOON*
 
 h2. Id selectors: global
 
-bc. #messagepane
+h3. #messagepane
 
 h4. Usage:
 
