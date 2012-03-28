@@ -2,9 +2,101 @@ h1. Textpattern CMS admin area stylesheet guide (v4.5)
 
 The purpose of this guide is to audit and document the current UI elements used within the admin-side of "Textpattern CMS":http://textpattern.com in order to streamline development, avoid conflicts and inconsistencies, and as a reference for admin theme authors and plugin authors.
 
-h2. Global ID selectors
+h2. Id selectors: page-specific
 
-h3. #messagepane
+Each page within the admin-side should have an id attribute applied to the @<body>@ tag, prefixed with 'page-'. This prefix *should not* be used anywhere else on the page apart from the @<body>@ tag.
+
+Additional admin-side pages created by plugin authors should respect the following naming convention for the @<body>@ tag id attribute:
+
+bc. #page-authorprefix_pluginname
+
+Below are the reserved id tags used by the core admin-side pages of Textpattern, these *should not* be duplicated in any other admin-side page.
+
+bc. #page-login
+
+Used on @<body>@ tag of the login page.
+
+bc. #page-reset_password
+
+Used on @<body>@ tag of the login > reset password page.
+
+bc. #page-article
+
+Used on @<body>@ tag of the content > write page.
+
+bc. #page-list
+
+Used on @<body>@ tag of the content > article list page.
+
+bc. #page-category
+
+Used on @<body>@ tag of the content > category page.
+
+bc. #page-image
+
+Used on @<body>@ tag of the content > images page.
+
+bc. #page-file
+
+Used on @<body>@ tag of the content > files page.
+
+bc. #page-link
+
+Used on @<body>@ tag of the content > links page.
+
+bc. #page-discuss
+
+Used on @<body>@ tag of the content > comments page.
+
+bc. #page-section
+
+Used on @<body>@ tag of the presentation > sections page.
+
+bc. #page-page
+
+Used on @<body>@ tag of the presentation > page templates page.
+
+bc. #page-form
+
+Used on @<body>@ tag of the presentation > form templates page.
+
+bc. #page-css
+
+Used on @<body>@ tag of the presentation > CSS styles page.
+
+bc. #page-diag
+
+Used on @<body>@ tag of the admin > diagnostics page.
+
+bc. #page-prefs
+
+Used on @<body>@ tag of the admin > preferences page.
+
+bc. #page-lang
+
+Used on @<body>@ tag of the admin > languages page.
+
+bc. #page-admin
+
+Used on @<body>@ tag of the admin > users page.
+
+bc. #page-log
+
+Used on @<body>@ tag of the admin > visitor logs page.
+
+bc. #page-plugin
+
+Used on @<body>@ tag of the admin > plugins page.
+
+bc. #page-import
+
+Used on @<body>@ tag of the admin > import page.
+
+*CURRENTLY INCOMPLETE - MORE TEXT TO BE ADDED SOON*
+
+h2. Id selectors: global
+
+bc. #messagepane
 
 h4. Usage:
 
@@ -21,49 +113,49 @@ h4. Notes:
 # @id="message"@ on the child @span@ does not seem to be used for styling purposes. Need clarification of its use.
 # This method is not currently consistent - it is not implemented on the login pages (login, logout, password request).
 
-h3. #edit
+bc. #edit
 
 Needs auditing and further clarification - seems to be used inconsistently throughout the admin pages. Could easily be replaced by proper use and targeting of the @.edit-pane@ class instead (see below).
 
-h3. #list
+bc. #list
 
 Needs auditing and further clarification - seems to be used inconsistently throughout the admin pages. Could easily be replaced by proper use and targeting of the @.list@ class instead (see below).
 
-h3. #content_switcher
+bc. #content_switcher
 
 h4. Usage:
 
 Used on a page with a list of switchable content, for example the list of available page templates within 'pages' page.
 
-*CURRENTLY INCOMPLETE*
+*CURRENTLY INCOMPLETE - MORE TEXT TO BE ADDED SOON*
 
-h2. Global class selectors
+h2. Class selectors: global
 
-h3. .txp-container
-
-TBC
-
-h3. .edit-pane
+bc. .txp-container
 
 TBC
 
-h3. .list
+bc. .edit-pane
 
 TBC
 
-h3. .txp-list
+bc. .list
+
+TBC
+
+bc. .txp-list
 
 Unnecessary class, functionality can be incorporated into @.list@ tag above instead. Recommend removal.
 
-h3. .txp-control-panel
+bc. .txp-control-panel
 
 TBC
 
-h3. .txp-navigation
+bc. .txp-navigation
 
 TBC
 
-*CURRENTLY INCOMPLETE*
+*CURRENTLY INCOMPLETE - MORE TEXT TO BE ADDED SOON*
 
 h2. Other UI usage examples
 
@@ -149,4 +241,4 @@ h4. Notes:
 # A @scope@ attribute should be applied to cells where appropriate (accessibility).
 # Removal of @id="list"@, as it duplicates functionality of @class="list"@.
 
-*CURRENTLY INCOMPLETE*
+*CURRENTLY INCOMPLETE - MORE TEXT TO BE ADDED SOON*
