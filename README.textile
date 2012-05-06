@@ -279,7 +279,7 @@ h3. .txp-container
 
 h4. Usage:
 
-TO BE DELETED v4.5
+TO BE DELETED v4.5 (TBC)
 
 h3. .txp-listtable
 
@@ -303,7 +303,7 @@ h3. .txp-list
 
 h4. Usage:
 
-Unnecessary class, functionality can be incorporated into @.list@ tag above instead. Recommend removal.
+TO BE DELETED v4.5 (TBC)
 
 h3. .txp-control-panel
 
