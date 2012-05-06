@@ -287,18 +287,6 @@ h4. Usage:
 
 Wrapper around tabular data tables, can be utilised to allow for responsive tables (by using CSS @overflow@ rules).
 
-h3. .edit-pane
-
-h4. Usage:
-
-TBC
-
-h3. .list
-
-h4. Usage:
-
-TBC
-
 h3. .txp-list
 
 h4. Usage:
@@ -311,7 +299,25 @@ h4. Usage:
 
 TBC
 
+h3. .txp-edit
+
+h4. Usage:
+
+Needs auditing and further clarification - seems to be used inconsistently throughout the admin pages. Could easily be replaced by proper use and targeting of the @.edit-pane@ class instead (see below).
+
 h3. .txp-navigation
+
+h4. Usage:
+
+TBC
+
+h3. .edit-pane
+
+h4. Usage:
+
+TBC
+
+h3. .list
 
 h4. Usage:
 
@@ -329,7 +335,7 @@ Tabular data lists.
 
 h4. Current code structure example:
 
-bc. <table cellpadding="0" cellspacing="0" border="0" id="list" align="center" class="list" width="90%">
+bc. <table id="list" class="list">
   <thead>
     <tr>
       <th></th>
@@ -399,7 +405,6 @@ bc. <table class="list">
 
 h4. Notes:
 
-# The attributes @cellpadding@, @cellspacing@, @border@, @align@ and @width@ are unnecessary and can (and should) be styled with CSS instead.
 # A @scope@ attribute should be applied to cells where appropriate (accessibility).
 # Removal of @id="list"@, as it duplicates functionality of @class="list"@.
 
