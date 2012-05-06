@@ -257,11 +257,35 @@ Used on a page with a list of switchable content, for example the list of availa
 
 h2. Class selectors: global
 
+h3. .txp-head
+
+h4. Usage:
+
+Container that wraps around the header area of the page.
+
+h3. .txp-body
+
+h4. Usage:
+
+Container that wraps around the body (content) area of the page - replaces older inconsistent @.txp-container@ (which sometimes did not wrap the whole content area).
+
+h3. .txp-foot
+
+Container that wraps around the footer area of the page - replaces older @#end_page@ (which was previously in the classic theme PHP file).
+
+h4. Usage:
+
 h3. .txp-container
 
 h4. Usage:
 
-TBC
+TO BE DELETED v4.5
+
+h3. .txp-listtable
+
+h4. Usage:
+
+Wrapper around tabular data tables, can be utilised to allow for responsive tables (by using CSS @overflow@ rules).
 
 h3. .edit-pane
 
